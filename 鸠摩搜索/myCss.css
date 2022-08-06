@@ -1,0 +1,72 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.right-top{
+    display: block;
+    margin: 35px 40px 0 auto;
+    width: 240px;
+}
+
+.out {
+    background: #fff;
+    width: 600px;
+    /* height: 485px; */
+    margin: 20px auto;
+    font: 13px Verdana, sans-serif, 宋体;
+}
+
+.pic {
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+.inputBox {
+    margin-top: 25px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+}
+
+.inputBox:focus {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.search {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    background-color: #202020;
+    color: #fff;
+    margin: 15px auto 0;
+    display: block;
+}
+
+.search:hover {
+    background-color: #303030;
+}
+
+.info{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sale{
+    font-size: 15px;
+    font-weight: bold;
+}
