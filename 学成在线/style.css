@@ -3,12 +3,20 @@
     padding: 0;
 }
 
+body {
+    background-color: #f3f5f7;
+}
+
 li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .header {
@@ -27,11 +35,10 @@ a {
     float: left;
     margin-left: 50px;
     height: 42px;
-    background-color: #fff;
 }
 
 .header-links li {
-    display: inline;
+    float: left;
     margin-left: 25px;
 }
 
@@ -48,7 +55,7 @@ a {
 .header-links a {
     display: inline-block;
     padding: 0 10px;
-    font-size: large;
+    font-size: 18px;
     height: 42px;
     color: black;
 }
@@ -91,6 +98,15 @@ a {
     background-color: #00a4ff;
 }
 
+.search button:hover {
+    box-shadow: 0 0 3px #00a4ff;
+}
+
+.search button:active {
+    box-shadow: 0 0 6px #00a4ff;
+    ;
+}
+
 .login {
     float: left;
     line-height: 42px;
@@ -102,4 +118,112 @@ a {
 .login img {
     margin-right: 4px;
     vertical-align: middle;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1200px;
+    height: 420px;
+    background-image: url(./imgs/banner2.png);
+}
+
+.content .subnav {
+    float: left;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.content .subnav li {
+    margin: 0;
+}
+
+.content .subnav li a {
+    display: block;
+    width: 150px;
+    line-height: 44px;
+    padding: 0 20px;
+    color: #d3d1d9;
+    font-size: 14px;
+}
+
+.content .subnav li a:hover {
+    color: #00b4ff;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.content .subnav li a span {
+    float: right;
+}
+
+.classTable {
+    float: right;
+    margin-top: 60px;
+    height: 300px;
+    width: 230px;
+    background-color: #fff;
+}
+
+.classTable ul {
+    margin-left: 17px;
+    background-color: #fff;
+}
+
+.classTable ul li {
+    height: 62px;
+    width: 195px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.classTable ul li a {
+    color: black;
+    display: block;
+    padding-top: 12px;
+    height: 62px;
+}
+
+.classTable ul li a:hover {
+    font-weight: bold;
+}
+
+.classTable button {
+    width: 195px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #00a4ff;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.classTable button:hover {
+    box-shadow: 0 0 2px #00a4ff;
+}
+
+.tableHead {
+    line-height: 48px;
+    background-color: #9bceea;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.studyStatus {
+    font-size: 16px;
+}
+
+.className {
+    font-size: 14px;
+}
+
+.learning {
+    font-size: 12px;
+    color: #bdbdbd;
 }
