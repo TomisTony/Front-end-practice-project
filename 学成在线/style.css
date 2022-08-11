@@ -187,7 +187,7 @@ button {
 }
 
 .classTable ul li a:hover {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .classTable button {
@@ -226,4 +226,261 @@ button {
 .learning {
     font-size: 12px;
     color: #bdbdbd;
+}
+
+.recommandedBox {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+}
+
+.recommandA {
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    width: 133px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00a4ff;
+}
+
+.recommandedBox ul li {
+    float: left;
+    display: block;
+    /* width: 133px; */
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.recommandedBox ul li a {
+    padding: 0 34px;
+    text-align: center;
+    border-left: 1px solid #bfbfbf;
+}
+
+.changeInterests {
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+    margin-right: 28px;
+    line-height: 60px;
+}
+
+.recommand {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.recommandHead {
+    height: 42px;
+    overflow: hidden;
+}
+
+.recommandHead h2 {
+    font-size: 20px;
+    color: #494949;
+    float: left;
+    display: inline;
+}
+
+.recommandHead a {
+    float: right;
+    display: block;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 7px;
+    margin-right: 30px;
+}
+
+.displayBoxes {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.displayBox {
+    float: left;
+    display: block;
+    width: 228px;
+    height: 270px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+.displayBox:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.displayBox img {
+    width: 228px;
+}
+
+.displayBox h2 {
+    font-size: 14px;
+    color: black;
+    padding: 20px 25px;
+}
+
+.displayBox p {
+    float: left;
+    font-size: 12px;
+    color: #999;
+}
+
+.displayBox .senior {
+    color: #ff7c2d;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.programmingGettingStart {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 38px;
+    overflow: hidden;
+}
+
+.programmingGettingStartHead {
+    height: 42px;
+    overflow: hidden;
+}
+
+.programmingGettingStartHead h2 {
+    font-size: 20px;
+    color: #494949;
+    float: left;
+    display: inline;
+}
+
+.programmingGettingStartHead a {
+    float: right;
+    display: block;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 7px;
+    margin-right: 30px;
+}
+
+.level {
+    float: left;
+    margin-left: 289px;
+}
+
+.level a {
+    float: left;
+    display: block;
+    width: 63px;
+    margin: 0 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.level a:hover {
+    font-weight: bold;
+    color: #00a4ff;
+    border-bottom: 1px solid #00a4ff;
+}
+
+.level .choosen {
+    font-weight: bold;
+    color: #00a4ff;
+    border-bottom: 2px solid #00a4ff;
+}
+
+.leftBox {
+    float: left;
+    width: 228px;
+    height: 392px;
+}
+
+.rightBox {
+    float: left;
+    width: 957px;
+    height: 392px;
+    margin-left: 15px;
+}
+
+
+.programmingGettingStartBox {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.rightBottomBox {
+    width: 957px;
+    height: 100px;
+    margin-top: 17px;
+}
+
+.footer {
+    height: 275px;
+    background-color: #fff;
+    margin-top: 42px;
+}
+
+.footerw {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footerLeft {
+    float: left;
+    width: 450px;
+    margin-right: 210px;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.footerLeft p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footerLeft a {
+    display: block;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.footerLeft a:hover {
+    box-shadow: 0 0 2px #00a4ff;
+}
+
+.footerBox {
+    width: 100px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 35px;
+}
+
+.footerBox h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footerBox li a {
+    font-size: 12px;
+    color: black;
+}
+
+.footer li a:hover {
+    text-decoration: underline;
 }
