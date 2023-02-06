@@ -29,6 +29,30 @@ class App extends Component {
         })
         this.setState({todos:newTodos});
     }
+
+    deleteItem = (id) => {
+        const {todos} = this.state;
+        const newTodos = todos.filter((todo)=>{
+            return todo.id !== id;
+        })
+        this.setState({todos:newTodos});
+    }
+
+    checkAll = (done) => {
+        const {todos} = this.state;
+        const newTodos = todos.map((todo)=>{
+            return {...todo,done}
+        })
+        this.setState({todos:newTodos});
+    }
+
+    clearAllFinish = () => {
+        const {todos} = this.state;
+        const newTodos = todos.filter((todo)=>{
+            return !todo.done;
+        })
+        this.setState({todos:newTodos});
+    }
     
     render(){
         const {todos} = this.state;
@@ -37,8 +61,8 @@ class App extends Component {
                 <div className="todo-container">
                     <div className="todo-wrap">
                         <Header addItem={this.addItem}/>
-                        <List todos={todos} changeItemChecked={this.changeItemChecked}/>
-                        <Footer />
+                        <List todos={todos} changeItemChecked={this.changeItemChecked} deleteItem={this.deleteItem}/>
+                        <Footer todos={todos} checkAll={this.checkAll} clearAllFinish={this.clearAllFinish}/>
                     </div>
                 </div>
             </div>

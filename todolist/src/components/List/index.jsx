@@ -4,13 +4,14 @@ import "./index.css"
 
 export default class index extends Component {
     render() {
-        const {todos, changeItemChecked} = this.props;
+        const {todos, changeItemChecked, deleteItem} = this.props;
 
         return (
             <ul className="todo-main">
                 {
                     todos.map(todo=>{
-                        return <Item key={todo.id} changeItemChecked={changeItemChecked} {...todo}/>
+                        return <Item key={todo.id} changeItemChecked={changeItemChecked} 
+                        deleteItem={deleteItem} {...todo}/>
                     })
                 }
             </ul>
