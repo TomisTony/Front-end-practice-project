@@ -14,6 +14,21 @@ class App extends Component {
             {id:'004',name:'test4',done:false},
         ]
     }
+
+    addItem = (newItemObj) => {
+        const {todos} = this.state;
+        var newItems = [newItemObj, ...todos];
+        this.setState({todos:newItems});
+    }
+
+    changeItemChecked = (id, done) => {
+        const {todos} = this.state;
+        const newTodos = todos.map((todo)=>{
+            if(todo.id === id) return {...todo,done}
+            else return todo;
+        })
+        this.setState({todos:newTodos});
+    }
     
     render(){
         const {todos} = this.state;
@@ -21,8 +36,8 @@ class App extends Component {
             <div className="App">
                 <div className="todo-container">
                     <div className="todo-wrap">
-                        <Header />
-                        <List todos={todos}/>
+                        <Header addItem={this.addItem}/>
+                        <List todos={todos} changeItemChecked={this.changeItemChecked}/>
                         <Footer />
                     </div>
                 </div>
